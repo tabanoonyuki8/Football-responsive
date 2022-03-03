@@ -1,0 +1,227 @@
+
+
+/*.............. First section ..............*/
+.sectionOne{
+    background-color: blue;
+}
+.FirstSection{
+margin: 30px;
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+   
+}
+.FirstSection:hover{
+    cursor: pointer;
+    background-color: rgb(71, 71, 218);
+}
+.FirstSection:hover img{
+    transform: rotate(-350deg);
+
+}
+.FirstSection img{
+    height: 500px;
+    width: 500px;
+    transition: transform 3s ease-out;
+}
+.button{
+    color: white;
+    padding: 10px 20px;
+    background-image: linear-gradient(orange,red);
+    border-radius: 20px;
+    font-size: 1em;
+}
+.button:hover{
+    font-size: 1.2em;
+    padding: 15px 25px;
+    background-image: linear-gradient(purple,green);
+}
+.hOneClass{
+    font-size: 4em;
+    color: aliceblue;
+}
+.header a{
+    text-decoration: none;
+ font-size: 1em;
+ color: azure;
+ margin-right: 50px;
+ 
+    
+}
+.header{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.header:hover a{
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+.Iconcolor{
+    color: cyan;
+    font-size: 1em;
+}
+.mainText{
+    width: 400px;
+}
+/* ............Second section ...............*/
+.player-name{
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+}
+.Box-Container{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap:27px ;
+    padding: 70px 180px 70px 180px;
+
+}
+.box{
+    border: 5px solid gainsboro;
+    border-radius: 20px;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    padding: 15px;
+    overflow: hidden;
+    
+}
+.box:hover img{
+    width: 100%;
+    height: 350px;
+    border-radius: 20%;
+    transform: scale(1.5);
+}
+
+.box img{
+    width: 100%;
+    height: 300px;
+transition: transform 2s ease-in-out;
+    
+}
+/* ..........3rd section........... */
+.third-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.thirdImage{
+    width: 400px;
+    height: 400px;
+    border-radius: 5x;
+    box-shadow: 3px 5px 12px grey;
+    margin: 40px;
+   
+   
+}
+
+.thirdText{
+    font-size: 3em;
+    font-family: 'Playball', cursive;
+font-family: 'Poppins', sans-serif;
+color: blue;
+}
+.Email{
+    margin-left: 30px;
+}
+/* ....footer 
+......*/
+.logoImg{
+    text-align: center;
+   
+
+}
+.logoImg img{
+    width: 483px;
+    height: 110px;
+    
+}
+
+.footerIcon i{
+    padding: 10px;
+    color: grey;
+    font-size: 2em;
+    border-radius: 20px;
+    background-color: rgb(206, 206, 206);
+}
+
+/*......... Media queries
+.............. */
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    .header{
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+    .FirstSection{
+       
+        flex-direction: column;
+        
+    width: 100%;
+    
+    padding: 0;
+    margin: 0;
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+    .Box-Container {
+        flex-direction: column;
+        width:60%;
+        padding: 0;
+    margin: 0;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .third-section{
+       
+        flex-direction: column;
+        width:60%;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .third-section img{
+        padding: 0;
+        margin: 0;
+    }
+    .logoImg img{
+     width: 100%;
+    }
+}
+/* tab Device */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .header{
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+    .FirstSection{
+       
+        flex-direction: column;
+        
+    width: 100%;
+    padding: 0;
+    margin: 0;
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+    .Box-Container {
+        flex-direction: column;
+        width:60%;
+        padding: 0;
+    margin: 0;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .third-section{
+       
+        flex-direction: column;
+        width:60%;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .third-section img{
+        padding: 0;
+        margin: 0;
+    }
+    .logoImg img{
+     width: 50%;
+    }
+}
