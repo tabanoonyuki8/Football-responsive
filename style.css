@@ -12,6 +12,7 @@ margin: 30px;
    
 }
 .FirstSection:hover{
+    cursor: no-drop;
     cursor: pointer;
     background-color: rgb(71, 71, 218);
 }
@@ -25,6 +26,7 @@ margin: 30px;
     transition: transform 3s ease-out;
 }
 .button{
+    cursor: no-drop;
     color: white;
     padding: 10px 20px;
     background-image: linear-gradient(orange,red);
@@ -35,10 +37,13 @@ margin: 30px;
     font-size: 1.2em;
     padding: 15px 25px;
     background-image: linear-gradient(purple,green);
+    overflow: hidden ;
 }
 .hOneClass{
-    font-size: 4em;
+    font-size: 3.5em;
     color: aliceblue;
+    font-family: 'Playball', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 .header a{
     text-decoration: none;
@@ -91,7 +96,7 @@ margin: 30px;
 .box:hover img{
     width: 100%;
     height: 350px;
-    border-radius: 20%;
+    border-radius: 10%;
     transform: scale(1.5);
 }
 
@@ -103,14 +108,15 @@ transition: transform 2s ease-in-out;
 }
 /* ..........3rd section........... */
 .third-section{
+    background-color: rgb(241, 217, 185);
     display: flex;
     justify-content: space-evenly;
 }
 .thirdImage{
     width: 400px;
     height: 400px;
-    border-radius: 5x;
-    box-shadow: 3px 5px 12px grey;
+    border-radius: 10px;
+    box-shadow: 30px 20px 15px rgb(85, 82, 82);
     margin: 40px;
    
    
@@ -120,7 +126,7 @@ transition: transform 2s ease-in-out;
     font-size: 3em;
     font-family: 'Playball', cursive;
 font-family: 'Poppins', sans-serif;
-color: blue;
+color: red;
 }
 .Email{
     margin-left: 30px;
@@ -150,6 +156,12 @@ color: blue;
 .............. */
 /* Mobile Device */
 @media only screen and (max-width:688px) {
+    .Email{
+   margin: 0;
+    }
+    .textarea{
+        width:80%
+    }
     .header{
         width: 100%;
         flex-direction: row-reverse;
@@ -167,21 +179,27 @@ color: blue;
     }
     .Box-Container {
         flex-direction: column;
-        width:60%;
+        width:100%;
         padding: 0;
     margin: 0;
         grid-template-columns: repeat(1,1fr);
     }
     .third-section{
+        margin-top: 20px;
+
        
         flex-direction: column;
-        width:60%;
+        width:100%;
         grid-template-columns: repeat(1,1fr);
 
     }
+    .thirdText{
+        text-align: center;
+    }
     .third-section img{
+        
         padding: 0;
-        margin: 0;
+        margin: -10px;
     }
     .logoImg img{
      width: 100%;
@@ -189,12 +207,21 @@ color: blue;
 }
 /* tab Device */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
+    .thirdText{
+        text-align: center;
+    }
+    .Email{
+        margin: 0;
+         }
+    .textarea{
+        width:80%
+    }
     .header{
         width: 100%;
         flex-direction: row-reverse;
     }
     .FirstSection{
-       
+        
         flex-direction: column;
         
     width: 100%;
@@ -205,22 +232,24 @@ color: blue;
     }
     .Box-Container {
         flex-direction: column;
-        width:60%;
+        width:70%;
         padding: 0;
     margin: 0;
         grid-template-columns: repeat(2,1fr);
     }
     .third-section{
+        margin-top: 20px;
        
         flex-direction: column;
-        width:60%;
+        width:80%;
         grid-template-columns: repeat(1,1fr);
 
     }
     .third-section img{
+        margin: -10px;
         padding: 0;
         margin: 0;
-    }
+      
     .logoImg img{
      width: 50%;
     }
